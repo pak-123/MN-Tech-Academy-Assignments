@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahira Noor — Frontend-Focused MERN Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+    <span id="themeIcon">☀️</span>
+  </button>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="logo">MN.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburgerBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#skills" onclick="closeMobile()">Skills</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#experience" onclick="closeMobile()">Experience</a>
+    <a href="#cta" onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div id="particles"></div>
+
+    <div class="hero-content">
+      <div class="badge">Frontend-Focused MERN Developer</div>
+      <p class="hero-greeting">Hey, I'm</p>
+      <h1 class="hero-name">Mahira<br><span>Noor</span></h1>
+      <p class="hero-tagline">I build impactful web & app solutions that solve real-world problems — transforming ideas
+        into responsive, high-performance, and user-friendly experiences.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-gold">View Projects</a>
+        <a href="www.linkedin.com/in/mahira-noor-developer08" class="btn-outline">Let's Connect</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-label">About Me</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-title">Building <em>experiences</em>,<br>not just interfaces.</h2>
+        <p>One year ago, I wasn't just learning how to code — I was learning how to solve real problems with code.
+          During my journey at Saylani Mass I.T Training, I realized something important: beautiful design means nothing
+          if it doesn't perform, scale, and convert.</p>
+        <p>That mindset shaped me into a Frontend-Focused Full Stack Developer who builds not just interfaces — but
+          experiences. I specialize in transforming static ideas into responsive, high-performance web applications with
+          clean, maintainable code.</p>
+        <p>My goal is to evolve into a Full Stack Engineer who builds complete, scalable digital products — from
+          intuitive frontends to powerful backend systems. I believe every line of code should create impact.</p>
+        <div class="about-stats">
+          <div class="stat-card reveal">
+            <span class="number">4+</span>
+            <span class="label">Internships</span>
+          </div>
+          <div class="stat-card reveal reveal-delay-1">
+            <span class="number">30%</span>
+            <span class="label">Code Reduction</span>
+          </div>
+          <div class="stat-card reveal reveal-delay-2">
+            <span class="number">1yr+</span>
+            <span class="label">Experience</span>
+          </div>
+          <div class="stat-card reveal reveal-delay-3">
+            <span class="number">∞</span>
+            <span class="label">Passion</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p
+          style="color: var(--text-muted); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px;">
+          Tech I Work With</p>
+        <div class="skill-tags">
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">JavaScript ES6+</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">Supabase</span>
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">HTML5 & CSS3</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Vue.js</span>
+          <span class="skill-tag">Vercel</span>
+        </div>
+
+        <div style="margin-top: 48px;">
+          <p
+            style="color: var(--text-muted); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px;">
+            My Approach</p>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div
+              style="padding: 18px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;">
+              <div style="color: var(--gold); font-size: 0.8rem; margin-bottom: 6px; letter-spacing: 0.05em;">UI/UX
+                Thinking</div>
+              <div style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.6;">User-first design with
+                empathy and clarity at every touchpoint.</div>
+            </div>
+            <div
+              style="padding: 18px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;">
+              <div style="color: var(--gold); font-size: 0.8rem; margin-bottom: 6px; letter-spacing: 0.05em;">
+                Performance Optimization</div>
+              <div style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.6;">Component-based architecture
+                that reduces code by 30–40%.</div>
+            </div>
+            <div
+              style="padding: 18px 20px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;">
+              <div style="color: var(--gold); font-size: 0.8rem; margin-bottom: 6px; letter-spacing: 0.05em;">Scalable
+                Architecture</div>
+              <div style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.6;">Clean, maintainable systems
+                built to grow with any product.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-label">Expertise</div>
+    <h2 class="section-title">Skills & <em>Technologies</em></h2>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <h3>⚡ Frontend</h3>
+        <div class="skill-items">
+          <span class="skill-item">HTML5</span>
+          <span class="skill-item">CSS3</span>
+          <span class="skill-item">JavaScript</span>
+          <span class="skill-item">ES6+</span>
+          <span class="skill-item">TypeScript</span>
+          <span class="skill-item">React.js</span>
+          <span class="skill-item">Next.js</span>
+          <span class="skill-item">Vue.js</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-1">
+        <h3>🎨 Styling & UI</h3>
+        <div class="skill-items">
+          <span class="skill-item">Tailwind CSS</span>
+          <span class="skill-item">Bootstrap</span>
+          <span class="skill-item">Responsive Design</span>
+          <span class="skill-item">CSS Grid</span>
+          <span class="skill-item">Flexbox</span>
+          <span class="skill-item">Animations</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2">
+        <h3>🔧 Backend & Databases</h3>
+        <div class="skill-items">
+          <span class="skill-item">Firebase</span>
+          <span class="skill-item">Supabase</span>
+          <span class="skill-item">REST APIs</span>
+          <span class="skill-item">Database Design</span>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-3">
+        <h3>🛠 Tools & DevOps</h3>
+        <div class="skill-items">
+          <span class="skill-item">Git</span>
+          <span class="skill-item">GitHub</span>
+          <span class="skill-item">Vercel</span>
+          <span class="skill-item">VS Code</span>
+          <span class="skill-item">Vite</span>
+          <span class="skill-item">npm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-label">Portfolio</div>
+    <h2 class="section-title">Featured <em>Projects</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-preview">
+          <div class="project-preview-bg"></div>
+          <div class="preview-glow"></div>
+          <div class="project-icon">💰</div>
+        </div>
+        <div class="project-body">
+          <div class="project-status">✦ Live on Vercel</div>
+          <h3>Budget Planner</h3>
+          <p>A comprehensive personal finance management app with expense tracking, category breakdowns, and visual
+            reporting to help users take control of their finances.</p>
+          <div class="tech-badges">
+            <span class="tech-badge">React.js</span>
+            <span class="tech-badge">Tailwind</span>
+            <span class="tech-badge">Firebase</span>
+            <span class="tech-badge">JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://vercel.com/mahis-projects-6c63ef09/budget-planner/u2ugXsFz4M7TvsQyJFNm8Aougk8s"
+              class="btn-sm-gold">Live Demo</a>
+            <a href="https://github.com/developer-mahira" class="btn-sm-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-preview">
+          <div class="project-preview-bg"></div>
+          <div class="preview-glow"></div>
+          <div class="project-icon">📊</div>
+        </div>
+        <div class="project-body">
+          <div class="project-status">✦ Completed</div>
+          <h3>Admin Dashboard</h3>
+          <p>A modern, feature-rich admin panel with data visualization, user management, and analytics charts —
+            designed for clarity and operational efficiency.</p>
+          <div class="tech-badges">
+            <span class="tech-badge">React.js</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Tailwind</span>
+            <span class="tech-badge">Supabase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/developer-mahira/hackathon-Dashboard" class="btn-sm-gold">Live Demo</a>
+            <a href="https://github.com/developer-mahira" class="btn-sm-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-preview">
+          <div class="project-preview-bg"></div>
+          <div class="preview-glow"></div>
+          <div class="project-icon">📄</div>
+        </div>
+        <div class="project-body">
+          <div class="project-status" style="color: #E6C56A;">⟳ In Progress</div>
+          <h3>Resume Builder</h3>
+          <p>A dynamic resume generation tool that lets users craft professional CVs with live preview, multiple
+            templates, and PDF export functionality.</p>
+          <div class="tech-badges">
+            <span class="tech-badge">Next.js</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Tailwind</span>
+            <span class="tech-badge">PDF.js</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/developer-mahira/hackathon-resume-builder" class="btn-sm-gold">Coming Soon</a>
+            <a href="https://github.com/developer-mahira" class="btn-sm-outline">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="section-label">Journey</div>
+    <h2 class="section-title">Professional <em>Experience</em></h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">February 2026 — Present</div>
+        <div class="timeline-company">Syntecxhub</div>
+        <div class="timeline-role">Web Developer</div>
+        <div class="timeline-desc">Thrilled to be gaining hands-on experience at SYNTECXHUB — building meaningful
+          projects and contributing to real development workflows.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">December 2025 — January 2026</div>
+        <div class="timeline-company">DevelopersHub Corporation</div>
+        <div class="timeline-role">Frontend Developer Intern</div>
+        <div class="timeline-desc">Completed a six-week virtual internship focused on modern front-end development.
+          Built responsive and user-friendly interfaces while working on real-world tasks with industry standards.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">November 2025 — December 2025</div>
+        <div class="timeline-company">Apexcify Technologies</div>
+        <div class="timeline-role">Frontend Developer Intern</div>
+        <div class="timeline-desc">Responsible for creating modern, responsive, and accessible interfaces using HTML,
+          CSS, JavaScript, Bootstrap, and React to support ongoing development tasks.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">April 2025 — Present</div>
+        <div class="timeline-company">Saylani Mass IT Training</div>
+        <div class="timeline-role">Web & App Development Student</div>
+        <div class="timeline-desc">Pursuing comprehensive full stack web and app development training. Working on
+          hands-on projects, building responsive websites and developing strong problem-solving abilities with
+          industry-relevant technical skills.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-glow"></div>
+    <div class="section-label" style="justify-content: center;">Get In Touch</div>
+    <h2
+      style="font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; margin-bottom: 16px; position: relative;">
+      Let's Build Something<br><em style="color: var(--gold); font-style: italic;">Impactful Together</em></h2>
+    <p
+      style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 44px; font-weight: 300; position: relative; max-width: 500px; margin-left: auto; margin-right: auto; margin-bottom: 44px;">
+      Open to remote opportunities, freelance projects, and collaborative ventures. Let's create something
+      extraordinary.</p>
+    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative;">
+      <a href="mailto:mahiranoor088@gmail.com" class="btn-gold">Collaborate With Me</a>
+      <a href="https://www.linkedin.com/in/mahira-noordeveloper08" class="btn-outline" target="_blank">LinkedIn
+        Profile</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">Mahira Noor.</div>
+    <div class="footer-copy">© 2026 Mahira Noor. Crafted with passion in Karachi, Pakistan.</div>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/mahira-noordeveloper08" class="social-link" target="_blank"
+        title="LinkedIn">in</a>
+      <a href="https://x.com/Mahiranoor088" class="social-link" target="_blank" title="Twitter/X">𝕏</a>
+      <a href="mailto:mahiranoor088@gmail.com" class="social-link" title="Email">@</a>
+      <a href="https://github.com/developer-mahira" class="social-link" target="_blank" title="GitHub">gh</a>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
