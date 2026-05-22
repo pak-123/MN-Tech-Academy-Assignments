@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="container" id="container">
+
+    <div class="form-section">
+
+      <!-- LOGIN FORM -->
+      <form class="login-form">
+        <h2>Login</h2>
+
+        <div class="social-login" style="gap: 8px;">
+          <button class="fb"><i class="fab fa-facebook"></i></button>
+          <button class="google"><i class="fab fa-google"></i></button>
+          <button class="linkedin"><i class="fab fa-linkedin"></i></button>
+        </div>
+
+        <div class="form-group">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Username" required>
+        </div>
+
+        <div class="form-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <p style="margin-top: 15px; font-size: 14px;">
+          Don’t have an account?
+          <a href="#" id="goToSignup" style="cursor:pointer; font-weight:600;">
+            Sign Up
+          </a>
+        </p>
+      </form>
+
+      <!-- SIGNUP FORM -->
+      <form class="signup-form">
+        <h2>Sign Up</h2>
+
+        <div class="form-group">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Full Name" required>
+        </div>
+
+        <div class="form-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" required>
+        </div>
+
+        <div class="form-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+
+        <p style="margin-top: 15px; font-size: 14px;">
+          Already have an account?
+          <a href="#" id="goToLogin" style="cursor:pointer; font-weight:600;">
+            Sign In
+          </a>
+        </p>
+      </form>
+
+    </div>
+
+    <!-- SIDE SECTION -->
+    <div class="side-section">
+      <h2>Welcome Back!</h2>
+      <p>Login or create a new account to continue.</p>
+      <button class="side-btn" id="toggleBtn">Switch</button>
+    </div>
+
+  </div>
+  <script src="script.js" type="module"></script>
+
+</body
