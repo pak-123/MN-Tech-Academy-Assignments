@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #e0e0e0;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 410px;
+    border: 2px solid #fff;
+    padding: 25px;
+    border-radius: 35px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    transition: 0.4s ease;
+    background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 50%, #b1f2f7 100%);
+}
+
+.card-container:hover {
+    transform: translateY(-8px);
+}
+
+.download-btn {
+    float: right;
+    cursor: pointer;
+}
+
+.download-btn img {
+    width: 27px;
+    transition: .3s ease;
+}
+
+.download-btn img:hover {
+    transform: scale(1.16);
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s ease;
+}
+
+.profile-img img:hover {
+    transform: scale(1.1);
+}
+
+.user-data {
+    margin-top: 15px;
+}
+
+.user-data h3 {
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.user-data p {
+    color: #777;
+    margin-top: 4px;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.btns button {
+    padding: 6px 15px;
+    border: none;
+    border-radius: 30px;
+    background: #e4e4e6;
+    color: #555;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btns button:hover {
+    background: #d1d0d0;
+}
+
+.user-information {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.data h3,
+.data span {
+    color: #111;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.data p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.data i {
+    color: #fbbf24;
+}
+
+.cta-btn-parent {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.cta-btn {
+    flex: 1;
+}
+
+.cta-btn button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn button:hover {
+    background: #242222;
+}
+
+.round {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #fff;
+}
+
+.round:hover {
+    background: #f3efef;
+}
+
+.round img {
+    width: 22px;
+    transition: .3s ease;
+    filter: saturate(1.9);
+}
+
+.round img:hover {
+    transform: scale(1.15);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .card-container {
+        max-width: 100%;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user-data h3 {
+        font-size: 1.3rem;
+    }
+
+    .user-data p {
+        font-size: 0.9rem;
+    }
+
+    .cta-btn button {
+        padding: 13px;
+        font-size: 0.95rem;
+    }
+
+    .round {
+        width: 58px;
+        height: 58px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .card-container {
+        padding: 18px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .profile-img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .user-data h3 {
+        font-size: 1.15rem;
+    }
+
+    .user-data p {
+        font-size: 0.85rem;
+    }
+
+    .btns {
+        gap: 8px;
+    }
+
+    .btns button {
+        font-size: 0.75rem;
+        padding: 5px 12px;
+    }
+
+    .user-information {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .data h3,
+    .data span {
+        font-size: 1rem;
+    }
+
+    .data p {
+        font-size: 0.8rem;
+    }
+
+    .cta-btn-parent {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .cta-btn button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .round {
+        width: 50px;
+        height: 50px;
+    }
+
+    .round img {
+        width: 18px;
+    }
+
+    .download-btn img {
+        width: 22px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .user-information {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-btn-parent {
+        flex-direction: column;
+    }
+
+    .round {
+        width: 55px;
+        height: 55px;
+    }
+
+    .cta-btn {
+        width: 100%;
+    }
+}
